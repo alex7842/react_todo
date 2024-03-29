@@ -1,0 +1,114 @@
+.h1{
+    font-size: 45px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(8, 8, 8);
+    -webkit-text-fill-color: rgb(23, 222, 253);
+    text-shadow: 1px 1px 1px gray;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1%;
+}
+.input,input[type="text"]{
+    padding: 1px;
+    font-size:clamp(17px,25px,24px);
+   
+}
+.input button{
+    font-size:clamp(17px,28px,30px);
+    width:11%;
+    
+    background-color: rgb(9, 238, 13);
+}
+.input button:hover{
+    
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 255, 34);
+    transition: 0.2s all;
+    color: rgb(4, 243, 36);
+
+}
+input{
+    border: 2px solid black;
+}
+input:focus{
+   
+    border: 3px solid rgb(11, 222, 255);
+   
+}
+input:hover{
+    transition:0.3s all;
+}
+.ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+}
+
+.task-table {
+    width:60%;
+    margin-left:24%;
+    
+    border-collapse: collapse;
+  }
+  
+  .task-table th, .task-table td {
+    border: 1px solid #908e8e;
+    padding: 3%;
+    text-align: left;
+    font-size: 18px;
+  }
+  .task-table , .td{
+    font-size: 24px;
+   
+        resize: both;
+        overflow: auto;
+    /* min-width: 100px; 
+        max-width: 400px; */
+      
+    padding: 3%;
+  }
+  .task-table th {
+    background-color: #f2f2f2;
+    font-size: 28px;
+  }
+  
+  .task-table button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    
+
+    font-size:15px;
+    margin: 2px;
+    cursor: pointer;
+  }
+  
+  .task-table button:hover {
+    background-color: #45a049;
+  }
+  
+  .task-table button.move-up {
+    background-color: #008CBA;
+  }
+  
+  .task-table button.move-down {
+    background-color: #f44336;
+  }
+  @media only screen and (max-width: 850px){
+    .task-table {
+        width:90%;
+        margin-left:5%;
+    }
+    .input button{
+        width: 17%;
+    }
+  }
